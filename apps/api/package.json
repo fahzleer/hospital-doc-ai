@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "bun run --watch src/index.ts",
     "start:local": "bun run src/index.ts",
-    "build": "echo 'no build needed'",
+    "build": "bun build ./src/app.ts --target=bun --outfile=./api/_bundle.js",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "bun run src/db/migrate.ts",
     "db:push": "drizzle-kit push",
