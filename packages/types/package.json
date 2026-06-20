@@ -1,0 +1,20 @@
+{
+  "name": "@app/types",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "arkregex": "^0.0.5",
+    "arktype": "^2.2.0"
+  },
+  "devDependencies": {
+    "@app/tsconfig": "*",
+    "typescript": "^5.7.3"
+  }
+}

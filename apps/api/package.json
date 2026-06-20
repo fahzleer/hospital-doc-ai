@@ -1,0 +1,36 @@
+{
+  "name": "@app/api",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/app.ts"
+  },
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "start": "bun run src/index.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "bun run src/db/migrate.ts",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio",
+    "db:seed": "bun run src/db/seed.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@app/types": "*",
+    "@elysiajs/cors": "^1.2.0",
+    "arktype": "^2.2.0",
+    "better-result": "^2.7.0",
+    "bignumber.js": "^9.3.1",
+    "drizzle-orm": "^0.45.2",
+    "elysia": "^1.2.25",
+    "postgres": "^3.4.5"
+  },
+  "devDependencies": {
+    "@app/tsconfig": "*",
+    "@types/bun": "^1.1.18",
+    "drizzle-kit": "^0.31.10",
+    "typescript": "^5.7.3"
+  }
+}

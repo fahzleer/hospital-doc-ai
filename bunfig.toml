@@ -1,0 +1,7 @@
+[install]
+# Use exact-ish resolution and hoist workspace deps
+peer = true
+
+[install.cache]
+disable = false
+
