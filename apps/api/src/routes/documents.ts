@@ -1,7 +1,7 @@
 import { classifyRequestSchema, createDocumentSchema, listDocumentsQuerySchema } from "@app/types";
 import { type } from "arktype";
 import { and, count, desc, eq, ilike, isNull } from "drizzle-orm";
-import Elysia from "elysia";
+import { Elysia } from "elysia";
 import { db } from "../db";
 import { documents } from "../db/schema";
 import { classifyDocument } from "../services/classifyDocument";

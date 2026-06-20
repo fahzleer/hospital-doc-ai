@@ -1,5 +1,5 @@
 import { cors } from "@elysiajs/cors";
-import Elysia from "elysia";
+import { Elysia } from "elysia";
 import { documentsRoute } from "./routes/documents";
 
 export const app = new Elysia()
