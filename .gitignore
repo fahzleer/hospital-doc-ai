@@ -8,7 +8,6 @@ dist
 .next
 out
 build
-apps/api/api/index.js
 
 # turbo
 .turbo
