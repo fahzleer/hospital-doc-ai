@@ -1,4 +1,3 @@
-export default function handler(request: Request): Response {
-  console.log("[vercel] minimal handler reached:", request.url);
-  return new Response("ok", { status: 200 });
-}
+import { app } from "../src/app";
+
+export default app.fetch;
