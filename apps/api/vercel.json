@@ -1,0 +1,7 @@
+{
+  "buildCommand": "bun run src/index.ts",
+  "devCommand": "bun run --watch src/index.ts",
+  "installCommand": "bun install",
+  "framework": "elysia",
+  "bunVersion": "1.x"
+}
