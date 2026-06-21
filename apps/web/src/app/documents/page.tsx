@@ -446,9 +446,13 @@ export default function DocumentRegistryPage() {
 
                 {manualError && <p className="mb-3 text-sm text-destructive">{manualError}</p>}
                 <div className="flex justify-end gap-2">
-                  <Button variant="outline" onClick={() => setModal(null)}>
+                  <button
+                    type="button"
+                    className="inline-flex h-9 items-center justify-center rounded-md border border-input bg-background px-4 py-2 text-sm font-medium text-foreground shadow-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+                    onClick={() => setModal(null)}
+                  >
                     Cancel
-                  </Button>
+                  </button>
                   <Button onClick={handleManualSubmit} disabled={manualMutation.isPending}>
                     {manualMutation.isPending ? "Issuing..." : "Issue"}
                   </Button>
@@ -470,9 +474,13 @@ export default function DocumentRegistryPage() {
                 />
                 {aiError && <p className="mb-3 text-sm text-destructive">{aiError}</p>}
                 <div className="flex justify-end gap-2">
-                  <Button variant="outline" onClick={() => setModal(null)}>
+                  <button
+                    type="button"
+                    className="inline-flex h-9 items-center justify-center rounded-md border border-input bg-background px-4 py-2 text-sm font-medium text-foreground shadow-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+                    onClick={() => setModal(null)}
+                  >
                     Cancel
-                  </Button>
+                  </button>
                   <Button onClick={handleAiSubmit} disabled={aiMutation.isPending}>
                     {aiMutation.isPending ? "AI analyzing..." : "Analyze & Issue"}
                   </Button>
