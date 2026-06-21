@@ -122,7 +122,7 @@ export const documentsRoute = new Elysia({ prefix: "/documents" })
 
     let code: string;
     try {
-      code = await issueCode(result.entityType);
+      code = await issueCode(result.entityType, parsed.text);
     } catch (err) {
       set.status = 500;
       return { error: err instanceof Error ? err.message : "issueCode failed" };

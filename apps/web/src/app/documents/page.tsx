@@ -237,6 +237,7 @@ export default function DocumentRegistryPage() {
     setManualError("");
     setManualText("");
     setAiError("");
+    setAiText("");
     setModal(m);
   }
 
